@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 	            	      
-$config['base_url'] = 'https://coordinateur.combo.fun/';
+$config['base_url'] = 'http://127.0.0.1/coordinateur.combo.fun/';
 
 $config['index_page'] = '';
 
