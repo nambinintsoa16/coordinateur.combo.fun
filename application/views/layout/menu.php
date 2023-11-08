@@ -3,11 +3,11 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
       <div class="sidebar-content">
         <ul class="nav nav-<?=$nav_color?>">
-          <li class="nav-section">
-            <span class="sidebar-mini-icon">
-              <i class="fa fa-ellipsis-h"></i>
-            </span>
-        </li>
+            <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                </span>
+            </li>
         <?php
    
          $i=1; foreach ($list_menu as $menu):?>

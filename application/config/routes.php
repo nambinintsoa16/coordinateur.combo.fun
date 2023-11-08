@@ -126,3 +126,5 @@ $route["($type_user)/hebdo_livre"] = 'hebdo_livre';
 $route["($type_user)/hebdo2"] = 'hebdo2';
 $route["($type_user)/login/(:any)/(:any)"] = 'accueil/logindata/$2/$3';
 $route['translate_uri_dashes'] = FALSE;
+
+$route["($type_user)/RealTimeTracking/display"] = 'RealTimeTracking/display';
