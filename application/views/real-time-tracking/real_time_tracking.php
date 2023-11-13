@@ -1,158 +1,160 @@
-
-    <style>
-        .card .card-header, .card-light .card-header {
-            padding: 1rem 1.25rem;
-            background-color: transparent;
-            border-bottom: 1px solid #ebecec!important;
-        }
-
-        .place {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            flex-grow: 1;
-        }
-
-        .left {
-            background-color: silver;
-        }
-
-        .middle {
-            background-color: gold;
-        }
-
-        .right {
-            background-color: #cd7f32;
-        }
-
-
-    </style>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between">
-                        <div>
+<div class="p-3">
+    <div class="row d-flex align-items-stretch h-100">
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-start fs-4">
+                        <div class="mx-3">
                             Etat previsionnel
                         </div>
-                        <div>
-                            Ar 256 000 
+                        <div class="mx-3">
+                            500000 MGA
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-stretch">
-            <div class="col-12 col-md-6 d-flex my-sm-3">
-                <div class="card h-100 w-100">
-                    <div class="card-header">
-                        Etat previsionnel par page
-                    </div>
-                    <div class="card-body">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 d-flex my-sm-3">
-                <div class="card h-100">
-                    <div class="card-header">
-                            Top 3
-                    </div>
-                    <div class="card-body">
-                        <div class="podium d-flex justify-content-between align-items-end">
-                            <div class="place left mx-3">
-                                <h1>2nd Place</h1>
-                                <p>Silver Medal</p>
-                            </div>
-                            <div class="place middle mx-3">
-                                <h1>1st Place</h1>
-                                <p>Gold Medal</p>
-                            </div>
-                            <div class="place right mx-3">
-                                <h1>3rd Place</h1>
-                                <p>Bronze Medal</p>
+                    <div class="mt-5">
+                        <div class="profile">
+                            <div class="profile-image d-flex justify-content-between align-items-end">
+                                <div class="image mx-3 mt-10">
+                                    <img src="../../assets/images/profil.jpg" alt="" width="100">
+                                    <div class="text-center">2</div>
+                                    <div class="place-name text-center">Jonathan</div>
+                                    <div class="place-name text-center">250000 MGA</div>
+                                </div>
+                                <div class="image mx-3 mb-5">
+                                    <img src="../../assets/images/profil.jpg" alt="" width="100">
+                                    <div class="text-center">1</div>
+                                    <div class="place-name text-center">Manoa</div>
+                                    <div class="place-name text-center">225000 MGA</div>
+                                </div>
+                                <div class="image mx-3 mt-5">
+                                    <img src="../../assets/images/profil.jpg" alt="" width="100">
+                                    <div class="text-center">3</div>
+                                    <div class="place-name text-center">Sitraka</div>
+                                    <div class="place-name text-center">175000MGA</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-12">
-                <div class="card h-100">
-                    <div class="card-header">
-                            Tableau
-                    </div>
-                    <div class="card-body">
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row align-items-stretch h-100">
+        <div class="col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <table class="table table-sm table-striped table-hover datatable">
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Nom</th>
+                                <th>Page</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jonathan</td>
+                                <td>Zah Manja</td>
+                                <td>250 000 MGA</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sitraka</td>
+                                <td>Zah Manja</td>
+                                <td>200 000 MGA</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Manoa</td>
+                                <td>Zah Manja</td>
+                                <td>150 000 MGA</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Jonathan</td>
+                                <td>Zah Manja</td>
+                                <td>250 000 MGA</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Sitraka</td>
+                                <td>Zah Manja</td>
+                                <td>200 000 MGA</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Manoa</td>
+                                <td>Zah Manja</td>
+                                <td>150 000 MGA</td>
+                            </tr>
+                        </tbody>
 
-    <script src="<?php echo base_url('assets/js/plugin/chart.js/chart.min.js'); ?>"></script>
-    
-    <script>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Styles DataTables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- DataTables JS -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.js"></script>
+<!-- DataTables French language file -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.6/i18n/French.json"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.datatable').DataTable({
+            autoFill: true,
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.11.6/i18n/French.json"
+            }
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
         var ctx = document.getElementById('myChart').getContext('2d');
-
-        // Fonction pour mettre à jour les données du graphique
-        function updateChartData() {
-            // Données de mock mises à jour (remplacez-les par vos propres données)
-            var mockData = {
-                'Page 1': Math.floor(Math.random() * 2000),  // Exemple : des chiffres aléatoires
-                'Page 2': Math.floor(Math.random() * 2000),
-                'Page 3': Math.floor(Math.random() * 2000),
-                'Page 4': Math.floor(Math.random() * 2000),
-                'Page 5': Math.floor(Math.random() * 2000),
-                // Ajoutez d'autres données ici
-            };
-
-            chart.data.labels = Object.keys(mockData); // Mettre à jour les noms des pages
-            chart.data.datasets[0].data = Object.values(mockData); // Mettre à jour les chiffres d'affaires
-
-            chart.update(); // Mettre à jour le graphique
-        }
-
-        // Données de mock (remplacez-les par vos propres données)
-        var mockData = {
-            'Page 1': 1000,
-            'Page 2': 1500,
-            'Page 3': 2000,
-            'Page 4': 1200,
-            'Page 5': 1800,
-            // Ajoutez d'autres données ici
-        };
-
-        var chart = new Chart(ctx, {
+        var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: Object.keys(mockData), // Noms des pages en X
+                labels: ['Zah Manja', 'Tia manimanitra', 'Zah jejo', 'Tarehy manjamanja'],
                 datasets: [{
-                    label: 'Chiffre d\'affaires',
-                    data: [], // Chiffres d'affaires en Y
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
+                    label: 'Montant en MGA',
+                    data: [250000, 200000, 175000, 105000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 0.2)',
+                    ],
                     borderWidth: 1
                 }]
             },
             options: {
                 scales: {
-                    x: {
+                    y: {
                         beginAtZero: true
                     }
                 }
             }
         });
-
-        // Mettez à jour les données du graphique toutes les 5 minutes (300 000 millisecondes)
-        setInterval(updateChartData, 10000);
-    </script>
-
-
-
-
-
+    });
+</script>
